@@ -423,7 +423,7 @@ function updateShoeTexture(selectedTexture, selectedPart, textureName) {
       
     };
 
-    const response= await fetch('http://localhost:3000/api/v1/shoes', {
+    const response= await fetch('https://shoe-backend-517m.onrender.com/api/v1/shoes', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
