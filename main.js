@@ -17,7 +17,7 @@ import { LoadingManager } from 'three';
 import gsap from 'gsap';
 
 let socket= null;
-socket = new WebSocket("ws://localhost:3000/primus");
+socket = new WebSocket("wss://shoe-backend-517m.onrender.com/primus");
 
 
 const draco = new DRACOLoader();
@@ -433,9 +433,10 @@ function updateShoeTexture(selectedTexture, selectedPart, textureName) {
     if(response.ok){
       
       let data = await response.json();
-      console.log(data.data[0].id);
+      // console.log(data.data[0].id);
       orderData.action="add";
       orderData._id=data.data[0].id;
+      console.log(orderData);
       socket.send(JSON.stringify(orderData));
 
       document.querySelector(".error").innerHTML = "Order placed";
