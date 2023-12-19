@@ -1,0 +1,525 @@
+p {
+  font-family: Helvetica, sans-serif;
+  /* font capital */
+  /* text-transform: uppercase;
+  font-weight: bold; */
+}
+
+h2 {
+  font-family: Helvetica, sans-serif;
+  /* font capital */
+  text-transform: uppercase;
+  font-weight:900;
+}
+
+h3 {
+  font-family: Helvetica, sans-serif;
+  /* font capital */
+  text-transform: uppercase;
+  font-weight:400;
+}
+
+
+.colors {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  background-color: white;
+  padding-left: 1em;
+  padding-right: 2em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+
+  font-family: Helvetica, sans-serif;  
+  text-transform: uppercase;
+  font-weight: bold;
+
+}
+.colors p {
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+
+#laces{
+  cursor: pointer;
+}
+#outside1{
+    cursor: pointer;
+}
+#outside2{
+    cursor: pointer;
+}
+#outside3{
+    cursor: pointer;
+}
+#inside{
+    cursor: pointer;
+}
+#solebottom{
+    cursor: pointer;
+}
+#soletop{
+    cursor: pointer;
+}
+#texturesMenu{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* padding-top: 1em; */
+  /* margin-top: 5em; */
+  /* gap: 2em; */
+  column-gap: 2em;
+  row-gap: 1em;
+  font-family: Helvetica, sans-serif;
+}
+#texturesMenu p{
+  font-size: 0.8em;
+}
+
+.titleTextures{
+  margin-top: 2em;
+  font-weight: 700;
+  text-align: left;
+  width: auto;
+  margin-bottom: 0.3em;
+
+
+}
+
+.boxTitle{
+  display: flex;
+  /* align-items: left;
+  justify-content: left; */
+  text-align: center;
+  width: auto;
+}
+
+.titleColors{
+  font-weight: 700;
+  margin-bottom: 0.3em;
+}
+#texture1{
+  cursor: pointer;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  margin-bottom: 1em;
+  background-image: url(./public/textures/brown_leather_albedo_4k.jpg);
+  border:  2px solid white;
+
+}
+
+.boxTexture1 {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  width: 5em;
+}
+
+.boxTexture1 p{
+  margin: 0;
+  margin-top: 0.3em;
+}
+
+.boxTexture2 {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  width: 5em;
+
+}
+
+.boxTexture2 p{
+  margin: 0;
+  margin-top: 0.3em;
+}
+
+.boxTexture3 {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  width: 5em;
+
+}
+
+.boxTexture3 p{
+  margin: 0;
+  margin-top: 0.3em;
+}
+
+.boxTexture4{
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  width: 5em;
+}
+
+.boxTexture4 p{
+  margin: 0;
+  margin-top: 0.3em;
+}
+
+.boxColor1 {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  width: 5em;
+  
+}
+
+.boxColor1 p{
+  margin: 0;
+  margin-top: 0.3em;
+}
+
+.boxColor2 {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  width: 5em;
+}
+
+.boxColor2 p{
+  margin: 0;
+  margin-top: 0.3em;
+}
+
+.boxColor3 {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  width: 5em;
+}
+
+.boxColor3 p{
+  margin: 0;
+  margin-top: 0.3em;
+}
+
+.boxColor4{
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  width: 5em;
+}
+
+.boxColor4 p{
+  margin: 0;
+  margin-top: 0.3em;
+}
+
+.boxColor5 {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  width: 5em;
+}
+
+.boxColor5 p{
+  margin: 0;
+  margin-top: 0.3em;
+}
+
+.boxColor6 {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  width: 5em;
+
+}
+
+.boxColor6 p{
+  margin: 0;
+  margin-top: 0.3em;
+}
+
+#texture2{
+  cursor: pointer;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  margin-bottom: 1em;
+  background-image: url(./public/textures/fabric_pattern_07_nor_gl_4k.jpg);
+  border:  2px solid white;
+}
+#texture3{
+  cursor: pointer;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  margin-bottom: 1em;
+  background-image: url(./public/textures/denim_fabric_diff_4k.jpg);;
+  border:  2px solid white;
+}
+
+#texture4 {
+  cursor: pointer;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  margin-bottom: 1em;
+  background-image: url(./public/textures/Pattern03_4K_VarA.png);
+  border:  2px solid white;
+
+}
+#color1{
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  margin-bottom: 1em;
+  cursor: pointer;
+  background-color: red;
+  /* display: none;
+  position: absolute;
+  top: 100%; */
+  border:  2px solid white;
+}
+#color2{
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  margin-bottom: 1em;
+  cursor: pointer;
+  background-color: green;
+  /* display: none;
+  position: absolute;
+  top: 100%; */
+  border:  2px solid white;
+}
+#color3{
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  margin-bottom: 1em;
+  cursor: pointer;
+  background-color: blue;
+  /* display: none;
+  position: absolute;
+  top: 100%; */
+  border:  2px solid white;
+}
+#color4{
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  margin-bottom: 1em;
+  cursor: pointer;
+  background-color: yellow;
+  /* display: none;
+  position: absolute;
+  top: 100%; */
+  border:  2px solid white;
+}
+#color5{
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  margin-bottom: 1em;
+  cursor: pointer;
+  background-color: orange;
+  /* display: none;
+  position: absolute;
+  top: 100%; */
+  border:  2px solid white;
+}
+
+#color6 {
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  margin-bottom: 1em;
+  cursor: pointer;
+  background-color: black;
+  /* display: none;
+  position: absolute;
+  top: 100%; */
+  border:  2px solid white;
+
+}
+
+#color6 {
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  margin-bottom: 1em;
+  cursor: pointer;
+  background-color: black;
+  /* display: none;
+  position: absolute;
+  top: 100%; */
+
+}
+
+nav {
+
+  position: absolute;
+  width: 100%;
+  height: 3em;
+  background-color: #64F243;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.3em;
+  padding-bottom: 0.1em;
+
+}
+
+.logo {
+  width: 11em;
+  padding-left: 3em;
+}
+
+.shoppingCart 
+{
+  width: 4em;
+  padding-right: 3em;
+}
+
+
+body{
+  background-color: #FFFFFF;
+  margin: 0;
+}
+
+
+
+
+.text {  
+  color: #000000;
+  margin-bottom: 25px;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.text img{
+  padding-bottom: 5em;
+}
+
+
+.progress-bar-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(0, 0, 0, 0.8); */
+  background-color: white;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+}
+
+.progress-bar-container img {
+  padding-bottom: 2em;
+}
+
+#progress-bar {
+  width: 30%;
+  margin-top: 0.5%;
+  height: 2%;
+  appearance: none;
+
+
+}
+
+#progress-bar::-webkit-progress-bar {
+  background-color: #000000;
+}
+
+#progress-bar::-webkit-progress-value {
+  background-color: #64F243;
+}
+
+
+label {
+  color: white;
+  font-size: 2rem;
+}
+
+
+#colorOptions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed; /* Use fixed position to keep it in view while scrolling */
+  top: 3.4em;
+  right: 0; /* Align to the right of the screen */
+  background-color: white;
+  height: 100%;
+  width: 18%;
+  padding-bottom: 0.1em;
+  padding-top: 0.1em;
+}
+
+#colorOptions div {
+  margin-bottom: 0;
+}
+
+#colorsMenu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  /* gap: 2em; */
+  column-gap: 2em;
+  row-gap: 1em;
+  font-family: Helvetica, sans-serif;
+  font-weight: 500;
+  /* margin-top: 1.5em; */
+}
+
+#colorsMenu p {
+  font-size: 0.8em;
+}
+ 
+#partShoe {
+  margin: 0em;
+  margin-top: 0.5em;
+} 
+
+#partShoe {
+  margin-bottom: 0;
+}
+
+.error{
+  font-size: 0.8em;
+  font-weight:bolder;
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+.btnTitle{
+  background-color: #64F243;
+  border: none;
+  color: #ffffff;
+  padding: 0.5em 1em;
+  margin-top: 1em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bolder;
+  cursor: pointer;
+  border-radius: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+}
