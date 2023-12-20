@@ -13,6 +13,15 @@ import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js';
 //import loadingManager
 import { LoadingManager } from 'three';
 
+//Import meshBasicMaterial
+import { MeshBasicMaterial } from 'three';
+
+
+import { FontLoader } from 'three/examples/jsm/loaders/FontLoader';
+//import TextGeometry
+import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry.js';
+
+
 //import gsap
 import gsap from 'gsap';
 
@@ -398,6 +407,20 @@ function updateShoeTexture(selectedTexture, selectedPart, textureName) {
  
  document.querySelector(".btnTitle").addEventListener("click", async function(){
   try{
+    const timeline = gsap.timeline({
+      onComplete: function () {
+        // After the animation is complete, add the "placed order" text
+        addPlacedOrderText();
+      },
+    });
+
+    timeline
+    .to(sneaker.rotation, { duration: 0.8, y: Math.PI * 2, repeat: 1 , ease: "linear"}) // Rotate around y-axis 2 times
+    .to(sneaker.position, { duration: 4, z: 15, ease: 'power2.inOut'}) // Rotate around y-axis 5 radians
+    // addPlacedOrderText();
+  console.log(timeline)
+  timeline.play();
+
     //fetch request to send data to server
     let orderData = {
       "laces_color": lastClickedColor.laces.color,
@@ -459,6 +482,31 @@ function updateShoeTexture(selectedTexture, selectedPart, textureName) {
   animate();
 
 });
+function addPlacedOrderText() {
+  // Load Helvetica font
+  const fontLoader = new FontLoader();
+  fontLoader.load('node_modules/three/examples/fonts/helvetiker_bold.typeface.json', (helveticaFont) => {
+    // Create a TextGeometry
+    const textGeometry = new TextGeometry('Placed Order', {
+      font: helveticaFont,
+      size: 0.3,
+      height: 0.01,
+      width: 0.03,
+    });
+
+    // Create a MeshBasicMaterial for the text
+    const textMaterial = new MeshBasicMaterial({ color: 0x64F243 });
+
+    // Create a mesh with the text geometry and material
+    const textMesh = new THREE.Mesh(textGeometry, textMaterial);
+
+    // Position the text on the cylinder
+    textMesh.position.set(-1, 0.5, 0); // Adjust the position as needed
+
+    // Add the text mesh to the scene
+    scene.add(textMesh);
+  });
+}
 
 
   //add light to shoe
