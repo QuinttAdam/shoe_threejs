@@ -485,7 +485,7 @@ function updateShoeTexture(selectedTexture, selectedPart, textureName) {
 function addPlacedOrderText() {
   // Load Helvetica font
   const fontLoader = new FontLoader();
-  fontLoader.load('node_modules/three/examples/fonts/helvetiker_bold.typeface.json', (helveticaFont) => {
+  fontLoader.load('font/helvetiker_bold.typeface.json', (helveticaFont) => {
     // Create a TextGeometry
     const textGeometry = new TextGeometry('Placed Order', {
       font: helveticaFont,
